@@ -11,6 +11,11 @@ export class Login{
   readonly loginButton       : Locator ;
   readonly signUpButton      : Locator ;
   readonly signLoginLink     : Locator ;
+  readonly  Logout           : Locator ;
+  readonly  errorMessage     : Locator ;
+
+
+
 
 constructor(page:Page){
     this.page =page ;
@@ -21,6 +26,8 @@ constructor(page:Page){
     this.loginEmail = page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
     this.password = page.getByRole('textbox', { name: 'Password' });
     this.loginButton=page.getByRole('button', { name: 'Login' });
+    this.Logout = page.locator('//a[@href="/logout"]');
+    this.errorMessage= page.locator("//p[contains(text(),'Your email or password is incorrect!')]");
 }
 
  async goToWebsite(){

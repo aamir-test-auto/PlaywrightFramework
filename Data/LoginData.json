@@ -1,0 +1,28 @@
+[
+
+   {
+    "username" : "aamirhabib@yopmail.com",
+    "password" : "Aa78692N#",
+     "status"    : "valid"
+   },
+    {
+    "username" : "aamirhabib@yopmail.com",
+    "password" : "Aa78623456912N#",
+    "status"    : "invalid"
+   },
+    {
+    "username" : "aamirhabi122b@yopmail.com",
+    "password" : "Aa78692N#",
+    "status"    : "invalid"
+   },
+    {
+    "username" : "aamirhabib@yopmail.com",
+    "password" : "      ",
+    "status"    : "invalid"
+   }
+    
+    
+   
+    
+
+]
