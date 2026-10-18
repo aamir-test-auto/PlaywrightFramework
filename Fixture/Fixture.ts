@@ -6,7 +6,8 @@ import {Signup} from "../POM/Signup"
 type fixture = {
      loginPage : Login ;
      SignupPage: Signup ;
-     plpPage   : PLP ; 
+     plpPage   : PLP ;
+
 }
 
 
@@ -24,7 +25,7 @@ export const test =baseTest.extend<fixture>(
           },
           
             plpPage : async({page},use)=>{
-            const plpPage = new PLP();
+            const plpPage = new PLP(page);
             use(plpPage);
           }
     }

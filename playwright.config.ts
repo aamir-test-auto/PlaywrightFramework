@@ -35,8 +35,7 @@ export default defineConfig({
     
     trace: 'on',
     screenshot : 'on',
-
-
+    video : 'on'
   },
 
   /* Configure projects for major browsers */

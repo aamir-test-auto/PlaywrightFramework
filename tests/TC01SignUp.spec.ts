@@ -9,6 +9,5 @@ test(`sign up test case ` ,async({page,loginPage,SignupPage})=>{
      await page.waitForLoadState();
      await loginPage.goToSingUpLoginPage();
      await SignupPage.singUpByUser(user);
-     
 });
 
