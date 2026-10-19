@@ -9,9 +9,13 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.64.1",
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^26.6.5"
   },
   "dependencies": {
-    "@faker-js/faker": "^10.6.0"
+    "@faker-js/faker": "^10.6.0",
+    "crypto-js": "^4.2.0",
+    "exceljs": "^4.4.0",
+    "pdfjs-dist-es5": "^2.13.216"
   }
 }
