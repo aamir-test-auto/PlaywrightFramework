@@ -1,6 +1,5 @@
 import {test,expect} from '../Fixture/Fixture'
 import * as fs from 'node:fs';
-
 const filePath = "Data/ProductName.json";
 const content = fs.readFileSync(filePath, 'utf8');
 const prductlist = JSON.parse(content);

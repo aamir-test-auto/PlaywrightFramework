@@ -2,12 +2,13 @@ import {test as baseTest} from "@playwright/test"
 import {Login} from "../POM/Login"
 import {PLP} from "../POM/PLP"
 import {Signup} from "../POM/Signup"
+import {Cart} from "../POM/Cart"
 
 type fixture = {
      loginPage : Login ;
      SignupPage: Signup ;
      plpPage   : PLP ;
-
+     cartPage  :Cart ;
 }
 
 
@@ -27,7 +28,12 @@ export const test =baseTest.extend<fixture>(
             plpPage : async({page},use)=>{
             const plpPage = new PLP(page);
             use(plpPage);
-          }
+          },
+
+          cartPage : async({page},use)=>{
+            const cartPage = new Cart(page);
+            use(cartPage);
+          },
     }
 )
 

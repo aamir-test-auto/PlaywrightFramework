@@ -6,6 +6,7 @@ export class PLP{
   readonly submit_search : Locator ;  
   readonly plpPageLink : Locator ;       
   readonly searchProductDiv : Locator ;       
+  readonly listOfAllProductDiv : Locator ;       
 
    constructor(page:Page){
        this.page = page ;
@@ -13,6 +14,9 @@ export class PLP{
        this. submit_search = page.locator("#submit_search");
        this.plpPageLink = page.locator('//a[@href="/products"]');
        this.searchProductDiv=page.locator(".single-products");
+
+       // =========================================
+       this.listOfAllProductDiv = page.locator(".product-image-wrapper");
    }
     
 
@@ -27,8 +31,12 @@ export class PLP{
       await this.submit_search.click();  
    }
 
-
-
+   
+async addToCartFistProduct(){
+     await this.listOfAllProductDiv.first()
+    .getByText('Add to cart').first()
+    .click();
+}
    
 
 
