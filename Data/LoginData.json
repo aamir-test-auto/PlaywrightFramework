@@ -1,9 +1,8 @@
 [
-
    {
     "username" : "aamirhabib@yopmail.com",
     "password" : "Aa78692N#",
-     "status"    : "valid"
+    "status"    : "valid"
    },
     {
     "username" : "aamirhabib@yopmail.com",
@@ -20,9 +19,4 @@
     "password" : "      ",
     "status"    : "invalid"
    }
-    
-    
-   
-    
-
 ]
