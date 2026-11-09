@@ -2,7 +2,10 @@
   "name": "playwrightframework",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test_qa": "cross-env TEST_ENV=QA npx playwright test",
+    "test_UAT": "cross-uat TEST_ENV=UAT npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,7 +18,9 @@
   },
   "dependencies": {
     "@faker-js/faker": "^10.6.0",
+    "cross-env": "^10.1.0",
     "crypto-js": "^4.2.0",
+    "dotenv": "^18.0.10",
     "exceljs": "^4.4.0",
     "mssql": "^12.7.14",
     "mysql2": "^3.24.6",

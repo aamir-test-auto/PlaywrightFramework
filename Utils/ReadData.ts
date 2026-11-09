@@ -50,7 +50,7 @@ export class ReadData {
     }
 
     async writeDataIntoTextFile(filePath: number | fs.PathLike, data: string): Promise<void> {
-       await fs.writeFile(filePath, data, 'utf8');
+       await fs.writeFile(filePath, data, 'utf-8');
     }
 
     async getPdfPageText(pdf: any, pageNo: number) {

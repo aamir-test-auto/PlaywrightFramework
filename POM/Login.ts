@@ -31,7 +31,7 @@ constructor(page:Page){
 }
 
  async goToWebsite(){
-    await this.page.goto("https://automationexercise.com/",{
+    await this.page.goto(<string>process.env.URL,{
     timeout: 60000,
     waitUntil: 'load'
 });
